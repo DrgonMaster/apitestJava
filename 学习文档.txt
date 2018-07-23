@@ -1,0 +1,18 @@
+<!-- 可控制用例按顺序执行 -->
+	<!-- <test name="test12" preserve-order="true"> -->
+
+	<!-- 异常测试，预期出现异常类，并输出异常的信息 -->
+	<!-- @Test(expectedExceptions = IllegalArgumentException.class, expectedExceptionsMessageRegExp="NullPoint") -->
+
+	<!-- 组测试 -->
+	<!-- <suite name="Suite1"> <test name="用户管理系统测试用例"> <groups> <run> <include 
+		name="loginTrue" /> </run> </groups> </test> </suite> -->
+
+	<!-- 参数化测试 -->
+	<!-- 两种参数化方式 一、在代码中 @Parameters("test1") 在testNG.xml文件中配置，实现数据和代码分离 <parameter 
+		name="test1" value="Tank" /> <parameter name="test1" value="Xiao" /> 二、 直接在代码中，可以实现负载的参数 
+		@DataProvider(name="user") public Object[][] Users(){ return new Object[][]{ 
+		{"root","passowrd"}, {"cnblogs.com", "tankxiao"}, {"tank","xiao"} }; } @Test(dataProvider="user") -->
+
+	<!-- 依赖测试 -->
+	<!-- 在代码中添加@Test(dependsOnMethods = {"setupEnv"}) -->

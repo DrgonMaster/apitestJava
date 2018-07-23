@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 命名空间mapper,如果有多个mapper文件，这个必须唯一 -->
+<mapper namespace="com.niuguwang.test.apitestJava.model">
+
+    <!--获取登陆接口case-->
+    <select id="loginCase" parameterType="Integer"  resultType="com.niuguwang.test.apitestJava.model.LoginCase">
+        select * from login where id = #{id};
+    </select>
+    
+    <!-- 首次进入到文图页面的问题列表 -->
+    <select id="getQuickSearch" parameterType="Integer"  resultType="com.niuguwang.test.apitestJava.model.GetQuickSearchCase">
+        select * from getquicksearch where id = #{id};
+    </select>
+    <!-- 从首页列表中选择一个问题 -->
+    <select id="addquestion" parameterType="Integer"  resultType="com.niuguwang.test.apitestJava.model.AddQuestionCase">
+        select * from addquestion where id = #{id};
+    </select>
+    <!-- 通过问题的标题来问问题 -->
+    <select id="getQuestionReplaybyLittle" parameterType="Integer"  resultType="com.niuguwang.test.apitestJava.model.GetQuestionReplybyLittle">
+        select * from getquestionreplybylittle where id = #{id};
+    </select>
+    <!-- 更新getquicksearch表的用户token -->
+    <update id="updateusertoken"  >
+        update getquicksearch set userToken = #{userToken}
+    </update>
+    <!-- 更新问题的title -->
+    <update id="updaAddQuestion"  >
+        update addquestion set content = #{content} where id =#{id}
+    </update>
+    
+    <!-- 更新addquestion表的usertoken -->
+    <update id="updateaddquestionusertoken"  >
+        update addquestion set userToken = #{userToken}
+    </update>
+    <!-- 更新getquestionreplybylittle用例表的usertoken -->
+    <update id="updateusertokenbyLittle"  >
+        update getquestionreplybylittle set userToken = #{userToken}
+    </update>
+    <!-- 更新getquestionreplybylittle的问题id -->
+    <update id="updategetQuestionReplybyLittle">
+        update getquestionreplybylittle set questionId = #{questionId} 
+    </update>
+	<select id="addquestionlist"   resultType="com.niuguwang.test.apitestJava.model.AddQuestionCase">
+        select * from addquestion
+    </select>
+    <select id="GetUserStocks"   resultType="com.niuguwang.test.apitestJava.model.GetUserStocksCase">
+        select  id,usertoken,auto from getuserstocks where id = #{id}
+    </select>
+</mapper>

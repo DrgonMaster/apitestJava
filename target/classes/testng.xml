@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="牛股王app接口">
+	<test name="注册登录" preserve-order="true">
+		<classes>
+			<class name="com.niuguwang.test.apitestJava.cases.LoginTest">
+				<methods>
+					<include name="loginTrue" />
+					<include name="loginTrue01" />
+					<include name="loginFalse" />
+					<include name="loginFalse01" />
+					<include name="loginFalse02" />
+					<include name="loginFalse03" />
+					<include name="loginFalse04" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="智能诊股">
+		<classes>
+			<class
+				name="com.niuguwang.test.apitestJava.cases.GetQuestionReplybyLittleTest">
+				<methods>
+					<include name="getQuestionReplaybyLittle" />
+				</methods>
+			</class>
+			<class
+				name="com.niuguwang.test.apitestJava.cases.GetQuickSearchTest">
+				<methods>
+					<include name="GetQuickSearchTest" />
+				</methods>
+			</class>
+			<class
+				name="com.niuguwang.test.apitestJava.cases.AddQuestionTest">
+				<methods>
+					<include name="addquestionList" />
+				</methods>
+			</class>
+			<class
+				name="com.niuguwang.test.apitestJava.cases.GetQuestionReplybyLittleTest">
+				<methods>
+					<include name="getQuestionReplaybyLittle" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="自选股">
+	    <classes>
+	        <class 
+	        name="com.niuguwang.test.apitestJava.cases.GetUserStocksTest">
+	        <methods>
+					<include name="getUserStocks" />
+			</methods>
+	    </class> 
+	    </classes>
+	   
+	</test>
+	
+	<listeners>
+		<listener
+			class-name="com.niuguwang.test.apitestJava.config.ExtentTestNGIReporterListener" />
+	</listeners>
+</suite>

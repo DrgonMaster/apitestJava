@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [牛股王app接口]">
+  <listeners>
+    <listener class-name="com.niuguwang.test.apitestJava.config.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test name="注册登录(failed)">
+    <classes>
+      <class name="com.niuguwang.test.apitestJava.cases.AddQuestionTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.niuguwang.test.apitestJava.cases.AddQuestionTest -->
+      <class name="com.niuguwang.test.apitestJava.cases.GetUserStocksTest">
+        <methods>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.niuguwang.test.apitestJava.cases.GetUserStocksTest -->
+      <class name="com.niuguwang.test.apitestJava.cases.GetQuickSearchTest">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.niuguwang.test.apitestJava.cases.GetQuickSearchTest -->
+      <class name="com.niuguwang.test.apitestJava.cases.GetQuestionReplybyLittleTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- com.niuguwang.test.apitestJava.cases.GetQuestionReplybyLittleTest -->
+      <class name="com.niuguwang.test.apitestJava.cases.LoginTest">
+        <methods>
+          <include name="loginFalse"/>
+          <include name="loginFalse04"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.niuguwang.test.apitestJava.cases.LoginTest -->
+    </classes>
+  </test> <!-- 注册登录(failed) -->
+</suite> <!-- Failed suite [牛股王app接口] -->

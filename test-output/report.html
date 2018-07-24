@@ -49,7 +49,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jul 23, 2018 02:40:20 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jul 24, 2018 03:37:01 PM</span>
 				</a>
 			</li>
 			<li>
@@ -144,10 +144,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='87.5%'><span class='strong'>14</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='93.75%'><span class='strong'>15</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='6.25%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -159,10 +159,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='87.5%'><span class='strong'>14</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='93.75%'><span class='strong'>15</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='12.5%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='6.25%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -180,16 +180,16 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>牛股王app接口 : 注册登录</span>
-						<span class='test-time'>Jul 23, 2018 02:40:20 PM</span>
+						<span class='test-time'>Jul 24, 2018 03:37:01 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 23, 2018 02:40:20 PM</span>
-	<span class='label end-time'>Jul 23, 2018 02:40:23 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+431ms</span>
+	<span class='label start-time'>Jul 24, 2018 03:37:01 PM</span>
+	<span class='label end-time'>Jul 24, 2018 03:37:06 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+248ms</span>
 </div>
-	<div class='test-desc'>Pass: 5 ; Fail: 2 ; Skip: 0 ; </div>
+	<div class='test-desc'>Pass: 6 ; Fail: 1 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
 				<span class='category label white-text'>牛股王app接口</span>
@@ -200,85 +200,9 @@
 		
 				<li class='node level-1 leaf fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
-						<div class='node-name'>loginFalse----用户名正确，密码错误</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:22 PM</span>
-						<span class='node-duration'>0h 0m 2s+26ms</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-						<div class='collapsible-body'>
-									<div class='category-list right'>
-											<span class='category label white-text'>牛股王app接口</span>
-											<span class='category label white-text'>注册登录</span>
-											<span class='category label white-text'>loginfalse</span>
-									</div>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='debug'>
-													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
-													<td class='step-details'>请求接口地址：https://user.niuguwang.com/api/login.ashx</td>
-												</tr>
-												<tr class='log' status='debug'>
-													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
-													<td class='step-details'>请求参数：LoginCase [id=2, username=13231408948, password=123456, loginTyte=null, deviceid=2, company=1, expected=用户名或密码错误]</td>
-												</tr>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
-													<td class='step-details'><pre>java.lang.AssertionError: expected [用户名或密码错误次数过多已锁定] but found [用户名或密码错误]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.niuguwang.test.apitestJava.cases.LoginTest.loginFalse(LoginTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf fail' status='fail' test-id='3'>
-					<div class='collapsible-header'>
 						<div class='node-name'>loginFalse04----用户名错误，密码正确</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:23 PM</span>
-						<span class='node-duration'>0h 0m 1s+785ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+26ms</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
@@ -299,17 +223,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://user.niuguwang.com/api/login.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：LoginCase [id=7, username=asdfghjklqwertyuiopasdfghjkllzxcvbnmklhjfdswwwww, password=1234567890poiuytrewqasdfghjkl, loginTyte=null, deviceid=null, company=null, expected=参数错误]</td>
 												</tr>
 												<tr class='log' status='fail'>
 													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'><pre>java.lang.AssertionError: expected [用户名或密码错误] but found [参数错误]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
@@ -350,11 +274,11 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+				<li class='node level-1 leaf pass' status='pass' test-id='3'>
 					<div class='collapsible-header'>
 						<div class='node-name'>loginTrue----使用手机号登录，用户名正确，密码正确</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:20 PM</span>
-						<span class='node-duration'>0h 0m 4s+66ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:01 PM</span>
+						<span class='node-duration'>0h 0m 8s+783ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -375,17 +299,60 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://user.niuguwang.com/api/login.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：LoginCase [id=1, username=13311151061, password=lj123456, loginTyte=null, deviceid=2, company=1, expected=登录成功]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
+													<td class='step-details'>Test passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<div class='node-name'>loginTrue01----使用用户名登录，用户名正确，密码错误</div>						
+						<span class='node-time'>Jul 24, 2018 03:37:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+461ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+									<div class='category-list right'>
+											<span class='category label white-text'>牛股王app接口</span>
+											<span class='category label white-text'>注册登录</span>
+											<span class='category label white-text'>loginTrue</span>
+									</div>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>3:37:10 PM</td>
+													<td class='step-details'>请求接口地址：https://user.niuguwang.com/api/login.ashx</td>
+												</tr>
+												<tr class='log' status='debug'>
+													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
+													<td class='timestamp'>3:37:10 PM</td>
+													<td class='step-details'>请求参数：LoginCase [id=6, username=hebeiliujin, password=lj123456, loginTyte=null, deviceid=2, company=1, expected=登录成功]</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -395,16 +362,16 @@
 				</li>
 				<li class='node level-1 leaf pass' status='pass' test-id='5'>
 					<div class='collapsible-header'>
-						<div class='node-name'>loginTrue01----使用用户名登录，用户名正确，密码错误</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:22 PM</span>
-						<span class='node-duration'>0h 0m 2s+110ms</span>
+						<div class='node-name'>loginFalse----用户名正确，密码错误</div>						
+						<span class='node-time'>Jul 24, 2018 03:37:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+361ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
 									<div class='category-list right'>
 											<span class='category label white-text'>牛股王app接口</span>
 											<span class='category label white-text'>注册登录</span>
-											<span class='category label white-text'>loginTrue</span>
+											<span class='category label white-text'>loginfalse</span>
 									</div>
 								<div class='node-steps'>
 									<table class='bordered table-results'>
@@ -418,17 +385,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://user.niuguwang.com/api/login.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
-													<td class='step-details'>请求参数：LoginCase [id=6, username=hebeiliujin, password=lj123456, loginTyte=null, deviceid=2, company=1, expected=登录成功]</td>
+													<td class='timestamp'>3:37:10 PM</td>
+													<td class='step-details'>请求参数：LoginCase [id=2, username=13231408948, password=123456, loginTyte=null, deviceid=2, company=1, expected=用户名或密码错误]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -439,8 +406,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
 						<div class='node-name'>loginFalse01----用户名为空，密码为空</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:22 PM</span>
-						<span class='node-duration'>0h 0m 1s+981ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+294ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -461,17 +428,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://user.niuguwang.com/api/login.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：LoginCase [id=3, username="", password="", loginTyte=null, deviceid=2, company=1, expected=未设置密码，请用手机号和验证码登录]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -482,8 +449,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
 						<div class='node-name'>loginFalse02----用户名正确，密码错误</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:22 PM</span>
-						<span class='node-duration'>0h 0m 1s+914ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+197ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -504,17 +471,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://user.niuguwang.com/api/login.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：LoginCase [id=4, username=13311151061, password=null, loginTyte=null, deviceid=null, company=null, expected=参数错误]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -525,8 +492,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
 						<div class='node-name'>loginFalse03----用户名错误，密码正确</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:23 PM</span>
-						<span class='node-duration'>0h 0m 1s+857ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:06 PM</span>
+						<span class='node-duration'>0h 0m 4s+108ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -547,17 +514,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://user.niuguwang.com/api/login.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：LoginCase [id=5, username=13331111, password=lJ123456, loginTyte=null, deviceid=null, company=null, expected=用户名或密码错误]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -573,14 +540,14 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='9'>
 					<div class='test-heading'>
 						<span class='test-name'>牛股王app接口 : 智能诊股</span>
-						<span class='test-time'>Jul 23, 2018 02:40:23 PM</span>
+						<span class='test-time'>Jul 24, 2018 03:37:07 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 23, 2018 02:40:23 PM</span>
-	<span class='label end-time'>Jul 23, 2018 02:40:24 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+183ms</span>
+	<span class='label start-time'>Jul 24, 2018 03:37:07 PM</span>
+	<span class='label end-time'>Jul 24, 2018 03:37:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+340ms</span>
 </div>
 	<div class='test-desc'>Pass: 8 ; Fail: 0 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
@@ -594,8 +561,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='10'>
 					<div class='collapsible-header'>
 						<div class='node-name'>getQuestionReplaybyLittle----通过问题的内容获取诊股答案</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:23 PM</span>
-						<span class='node-duration'>0h 0m 1s+653ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+630ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -615,17 +582,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>接口地址：https://user.niuguwang.com/AskStock/getQuestionReplyByLittle.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：GetQuestionReplybyLittle [questionId=1740714, userToken=rdHRLzQgBQx_CEUM7qx7q6p25xyuMvu493iyb60IBdm-l3lVdrPS0Q**]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -636,8 +603,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='11'>
 					<div class='collapsible-header'>
 						<div class='node-name'>quickSearch----首次进入获取欢迎列表</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:23 PM</span>
-						<span class='node-duration'>0h 0m 1s+507ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+300ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -658,17 +625,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://user.niuguwang.com/AskStock/getQuickSearch.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：AddQuestion [id=1, ownerIds=0, ownerNames=, content=海默科技关联板块, userToken=1, width=-1, height=-1]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -679,8 +646,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='12'>
 					<div class='collapsible-header'>
 						<div class='node-name'>addquestionList----首页问题列表--AddQuestion [id=1, ownerIds=0, ownerNames=null, content=海默科技关联板块, userTok...</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:23 PM</span>
-						<span class='node-duration'>0h 0m 1s+217ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:08 PM</span>
+						<span class='node-duration'>0h 0m 2s+272ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -701,17 +668,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://user.niuguwang.com/AskStock/addQuestion.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：AddQuestion [id=1, ownerIds=0, ownerNames=null, content=海默科技关联板块, userToken=rdHRLzQgBQx_CEUM7qx7q6p25xyuMvu493iyb60IBdm-l3lVdrPS0Q**, width=744, height=545]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -722,8 +689,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='13'>
 					<div class='collapsible-header'>
 						<div class='node-name'>addquestionList----首页问题列表--AddQuestion [id=2, ownerIds=0, ownerNames=null, content=业绩预增优质成长股, userTo...</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:23 PM</span>
-						<span class='node-duration'>0h 0m 0s+998ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:08 PM</span>
+						<span class='node-duration'>0h 0m 1s+981ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -744,17 +711,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://user.niuguwang.com/AskStock/addQuestion.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：AddQuestion [id=2, ownerIds=0, ownerNames=null, content=业绩预增优质成长股, userToken=rdHRLzQgBQx_CEUM7qx7q6p25xyuMvu493iyb60IBdm-l3lVdrPS0Q**, width=744, height=545]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -765,8 +732,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='14'>
 					<div class='collapsible-header'>
 						<div class='node-name'>addquestionList----首页问题列表--AddQuestion [id=3, ownerIds=0, ownerNames=null, content=连续三年净资产收益高的策略, us...</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:23 PM</span>
-						<span class='node-duration'>0h 0m 0s+937ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:08 PM</span>
+						<span class='node-duration'>0h 0m 1s+935ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -787,17 +754,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://user.niuguwang.com/AskStock/addQuestion.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：AddQuestion [id=3, ownerIds=0, ownerNames=null, content=连续三年净资产收益高的策略, userToken=rdHRLzQgBQx_CEUM7qx7q6p25xyuMvu493iyb60IBdm-l3lVdrPS0Q**, width=744, height=545]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -808,8 +775,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='15'>
 					<div class='collapsible-header'>
 						<div class='node-name'>addquestionList----首页问题列表--AddQuestion [id=4, ownerIds=0, ownerNames=null, content=胜率最高策略, userToken...</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:24 PM</span>
-						<span class='node-duration'>0h 0m 0s+723ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:08 PM</span>
+						<span class='node-duration'>0h 0m 1s+789ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -830,17 +797,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://user.niuguwang.com/AskStock/addQuestion.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：AddQuestion [id=4, ownerIds=0, ownerNames=null, content=胜率最高策略, userToken=rdHRLzQgBQx_CEUM7qx7q6p25xyuMvu493iyb60IBdm-l3lVdrPS0Q**, width=744, height=545]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -851,8 +818,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='16'>
 					<div class='collapsible-header'>
 						<div class='node-name'>addquestionList----首页问题列表--AddQuestion [id=5, ownerIds=0, ownerNames=null, content=上升趋势确定策略, userTok...</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:24 PM</span>
-						<span class='node-duration'>0h 0m 0s+619ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:09 PM</span>
+						<span class='node-duration'>0h 0m 1s+701ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -873,17 +840,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://user.niuguwang.com/AskStock/addQuestion.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：AddQuestion [id=5, ownerIds=0, ownerNames=null, content=上升趋势确定策略, userToken=rdHRLzQgBQx_CEUM7qx7q6p25xyuMvu493iyb60IBdm-l3lVdrPS0Q**, width=744, height=545]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -894,8 +861,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='17'>
 					<div class='collapsible-header'>
 						<div class='node-name'>addquestionList----首页问题列表--AddQuestion [id=6, ownerIds=0, ownerNames=null, content=足球概念龙头, userToken...</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:24 PM</span>
-						<span class='node-duration'>0h 0m 0s+551ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:09 PM</span>
+						<span class='node-duration'>0h 0m 1s+366ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -916,17 +883,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://user.niuguwang.com/AskStock/addQuestion.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：AddQuestion [id=6, ownerIds=0, ownerNames=null, content=足球概念龙头, userToken=rdHRLzQgBQx_CEUM7qx7q6p25xyuMvu493iyb60IBdm-l3lVdrPS0Q**, width=744, height=545]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -942,14 +909,14 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='18'>
 					<div class='test-heading'>
 						<span class='test-name'>牛股王app接口 : 自选股</span>
-						<span class='test-time'>Jul 23, 2018 02:40:24 PM</span>
+						<span class='test-time'>Jul 24, 2018 03:37:09 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jul 23, 2018 02:40:24 PM</span>
-	<span class='label end-time'>Jul 23, 2018 02:40:24 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+133ms</span>
+	<span class='label start-time'>Jul 24, 2018 03:37:09 PM</span>
+	<span class='label end-time'>Jul 24, 2018 03:37:09 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+609ms</span>
 </div>
 	<div class='test-desc'>Pass: 1 ; Fail: 0 ; Skip: 0 ; </div>
 	<div class='test-attributes'>
@@ -963,8 +930,8 @@
 				<li class='node level-1 leaf pass' status='pass' test-id='19'>
 					<div class='collapsible-header'>
 						<div class='node-name'>getUserStocks----获取用户列表</div>						
-						<span class='node-time'>Jul 23, 2018 02:40:24 PM</span>
-						<span class='node-duration'>0h 0m 0s+483ms</span>
+						<span class='node-time'>Jul 24, 2018 03:37:09 PM</span>
+						<span class='node-duration'>0h 0m 1s+308ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -985,17 +952,17 @@
 										<tbody>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求接口地址：https://shq.niuguwang.com/aquote/userdata/getuserstocks_v180531.ashx</td>
 												</tr>
 												<tr class='log' status='debug'>
 													<td class='status debug' title='debug' alt='debug'><i class='material-icons'>low_priority</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>请求参数：GetUserStocksCase [id=1, auto=1, usertoken=rdHRLzQgBQx_CEUM7qx7q6p25xyuMvu493iyb60IBdm-l3lVdrPS0Q**]</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>2:40:24 PM</td>
+													<td class='timestamp'>3:37:10 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1060,208 +1027,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>牛股王app接口</span>
 						<span class='category-status right'>
-							<span class='label pass'>16</span>
-							<span class='label fail'>3</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 16</span>
-							<span class='label red lighten-1 white-text'>Failed: 3</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 23, 2018 02:40:20 PM</td>
-										<td class='linked' test-id='1'>注册登录</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:22 PM</td>
-										<td class='linked' test-id='2'>注册登录.loginFalse----用户名正确，密码错误</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
-										<td class='linked' test-id='3'>注册登录.loginFalse04----用户名错误，密码正确</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:20 PM</td>
-										<td class='linked' test-id='4'>注册登录.loginTrue----使用手机号登录，用户名正确，密码正确</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:22 PM</td>
-										<td class='linked' test-id='5'>注册登录.loginTrue01----使用用户名登录，用户名正确，密码错误</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:22 PM</td>
-										<td class='linked' test-id='6'>注册登录.loginFalse01----用户名为空，密码为空</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:22 PM</td>
-										<td class='linked' test-id='7'>注册登录.loginFalse02----用户名正确，密码错误</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
-										<td class='linked' test-id='8'>注册登录.loginFalse03----用户名错误，密码正确</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
-										<td class='linked' test-id='9'>智能诊股</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
-										<td class='linked' test-id='10'>智能诊股.getQuestionReplaybyLittle----通过问题的内容获取诊股答案</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
-										<td class='linked' test-id='11'>智能诊股.quickSearch----首次进入获取欢迎列表</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
-										<td class='linked' test-id='12'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=1, ownerIds=0, ownerNames=null, content=海默科技关联板块, userTok...</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
-										<td class='linked' test-id='13'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=2, ownerIds=0, ownerNames=null, content=业绩预增优质成长股, userTo...</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
-										<td class='linked' test-id='14'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=3, ownerIds=0, ownerNames=null, content=连续三年净资产收益高的策略, us...</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
-										<td class='linked' test-id='15'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=4, ownerIds=0, ownerNames=null, content=胜率最高策略, userToken...</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
-										<td class='linked' test-id='16'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=5, ownerIds=0, ownerNames=null, content=上升趋势确定策略, userTok...</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
-										<td class='linked' test-id='17'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=6, ownerIds=0, ownerNames=null, content=足球概念龙头, userToken...</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
-										<td class='linked' test-id='18'>自选股</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
-										<td class='linked' test-id='19'>自选股.getUserStocks----获取用户列表</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>注册登录</span>
-						<span class='category-status right'>
-							<span class='label pass'>5</span>
-							<span class='label fail'>3</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 5</span>
-							<span class='label red lighten-1 white-text'>Failed: 3</span>
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 23, 2018 02:40:20 PM</td>
-										<td class='linked' test-id='1'>注册登录</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:22 PM</td>
-										<td class='linked' test-id='2'>注册登录.loginFalse----用户名正确，密码错误</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
-										<td class='linked' test-id='3'>注册登录.loginFalse04----用户名错误，密码正确</td>
-										<td><span class='test-status fail'>fail</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:20 PM</td>
-										<td class='linked' test-id='4'>注册登录.loginTrue----使用手机号登录，用户名正确，密码正确</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:22 PM</td>
-										<td class='linked' test-id='5'>注册登录.loginTrue01----使用用户名登录，用户名正确，密码错误</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:22 PM</td>
-										<td class='linked' test-id='6'>注册登录.loginFalse01----用户名为空，密码为空</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:22 PM</td>
-										<td class='linked' test-id='7'>注册登录.loginFalse02----用户名正确，密码错误</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
-										<td class='linked' test-id='8'>注册登录.loginFalse03----用户名错误，密码正确</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>loginfalse</span>
-						<span class='category-status right'>
-							<span class='label pass'>3</span>
+							<span class='label pass'>17</span>
 							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 3</span>
+							<span class='label green accent-4 white-text'>Passed: 17</span>
 							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
@@ -1277,27 +1049,222 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 23, 2018 02:40:22 PM</td>
-										<td class='linked' test-id='2'>注册登录.loginFalse----用户名正确，密码错误</td>
+										<td>Jul 24, 2018 03:37:01 PM</td>
+										<td class='linked' test-id='1'>注册登录</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
-										<td class='linked' test-id='3'>注册登录.loginFalse04----用户名错误，密码正确</td>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='2'>注册登录.loginFalse04----用户名错误，密码正确</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:22 PM</td>
+										<td>Jul 24, 2018 03:37:01 PM</td>
+										<td class='linked' test-id='3'>注册登录.loginTrue----使用手机号登录，用户名正确，密码正确</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='4'>注册登录.loginTrue01----使用用户名登录，用户名正确，密码错误</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='5'>注册登录.loginFalse----用户名正确，密码错误</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
 										<td class='linked' test-id='6'>注册登录.loginFalse01----用户名为空，密码为空</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:22 PM</td>
+										<td>Jul 24, 2018 03:37:06 PM</td>
 										<td class='linked' test-id='7'>注册登录.loginFalse02----用户名正确，密码错误</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='8'>注册登录.loginFalse03----用户名错误，密码正确</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:07 PM</td>
+										<td class='linked' test-id='9'>智能诊股</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:07 PM</td>
+										<td class='linked' test-id='10'>智能诊股.getQuestionReplaybyLittle----通过问题的内容获取诊股答案</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:07 PM</td>
+										<td class='linked' test-id='11'>智能诊股.quickSearch----首次进入获取欢迎列表</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:08 PM</td>
+										<td class='linked' test-id='12'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=1, ownerIds=0, ownerNames=null, content=海默科技关联板块, userTok...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:08 PM</td>
+										<td class='linked' test-id='13'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=2, ownerIds=0, ownerNames=null, content=业绩预增优质成长股, userTo...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:08 PM</td>
+										<td class='linked' test-id='14'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=3, ownerIds=0, ownerNames=null, content=连续三年净资产收益高的策略, us...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:08 PM</td>
+										<td class='linked' test-id='15'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=4, ownerIds=0, ownerNames=null, content=胜率最高策略, userToken...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:09 PM</td>
+										<td class='linked' test-id='16'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=5, ownerIds=0, ownerNames=null, content=上升趋势确定策略, userTok...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:09 PM</td>
+										<td class='linked' test-id='17'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=6, ownerIds=0, ownerNames=null, content=足球概念龙头, userToken...</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:09 PM</td>
+										<td class='linked' test-id='18'>自选股</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:09 PM</td>
+										<td class='linked' test-id='19'>自选股.getUserStocks----获取用户列表</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>注册登录</span>
+						<span class='category-status right'>
+							<span class='label pass'>6</span>
+							<span class='label fail'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 6</span>
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 24, 2018 03:37:01 PM</td>
+										<td class='linked' test-id='1'>注册登录</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='2'>注册登录.loginFalse04----用户名错误，密码正确</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:01 PM</td>
+										<td class='linked' test-id='3'>注册登录.loginTrue----使用手机号登录，用户名正确，密码正确</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='4'>注册登录.loginTrue01----使用用户名登录，用户名正确，密码错误</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='5'>注册登录.loginFalse----用户名正确，密码错误</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='6'>注册登录.loginFalse01----用户名为空，密码为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='7'>注册登录.loginFalse02----用户名正确，密码错误</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='8'>注册登录.loginFalse03----用户名错误，密码正确</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>loginfalse</span>
+						<span class='category-status right'>
+							<span class='label pass'>4</span>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 4</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='2'>注册登录.loginFalse04----用户名错误，密码正确</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='5'>注册登录.loginFalse----用户名正确，密码错误</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='6'>注册登录.loginFalse01----用户名为空，密码为空</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='7'>注册登录.loginFalse02----用户名正确，密码错误</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 24, 2018 03:37:06 PM</td>
 										<td class='linked' test-id='8'>注册登录.loginFalse03----用户名错误，密码正确</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1331,13 +1298,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 23, 2018 02:40:20 PM</td>
-										<td class='linked' test-id='4'>注册登录.loginTrue----使用手机号登录，用户名正确，密码正确</td>
+										<td>Jul 24, 2018 03:37:01 PM</td>
+										<td class='linked' test-id='3'>注册登录.loginTrue----使用手机号登录，用户名正确，密码正确</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:22 PM</td>
-										<td class='linked' test-id='5'>注册登录.loginTrue01----使用用户名登录，用户名正确，密码错误</td>
+										<td>Jul 24, 2018 03:37:06 PM</td>
+										<td class='linked' test-id='4'>注册登录.loginTrue01----使用用户名登录，用户名正确，密码错误</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1370,47 +1337,47 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
+										<td>Jul 24, 2018 03:37:07 PM</td>
 										<td class='linked' test-id='9'>智能诊股</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
+										<td>Jul 24, 2018 03:37:07 PM</td>
 										<td class='linked' test-id='10'>智能诊股.getQuestionReplaybyLittle----通过问题的内容获取诊股答案</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
+										<td>Jul 24, 2018 03:37:07 PM</td>
 										<td class='linked' test-id='11'>智能诊股.quickSearch----首次进入获取欢迎列表</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
+										<td>Jul 24, 2018 03:37:08 PM</td>
 										<td class='linked' test-id='12'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=1, ownerIds=0, ownerNames=null, content=海默科技关联板块, userTok...</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
+										<td>Jul 24, 2018 03:37:08 PM</td>
 										<td class='linked' test-id='13'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=2, ownerIds=0, ownerNames=null, content=业绩预增优质成长股, userTo...</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
+										<td>Jul 24, 2018 03:37:08 PM</td>
 										<td class='linked' test-id='14'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=3, ownerIds=0, ownerNames=null, content=连续三年净资产收益高的策略, us...</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
+										<td>Jul 24, 2018 03:37:08 PM</td>
 										<td class='linked' test-id='15'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=4, ownerIds=0, ownerNames=null, content=胜率最高策略, userToken...</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
+										<td>Jul 24, 2018 03:37:09 PM</td>
 										<td class='linked' test-id='16'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=5, ownerIds=0, ownerNames=null, content=上升趋势确定策略, userTok...</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
+										<td>Jul 24, 2018 03:37:09 PM</td>
 										<td class='linked' test-id='17'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=6, ownerIds=0, ownerNames=null, content=足球概念龙头, userToken...</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1444,7 +1411,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
+										<td>Jul 24, 2018 03:37:07 PM</td>
 										<td class='linked' test-id='11'>智能诊股.quickSearch----首次进入获取欢迎列表</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1478,32 +1445,32 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
+										<td>Jul 24, 2018 03:37:08 PM</td>
 										<td class='linked' test-id='12'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=1, ownerIds=0, ownerNames=null, content=海默科技关联板块, userTok...</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
+										<td>Jul 24, 2018 03:37:08 PM</td>
 										<td class='linked' test-id='13'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=2, ownerIds=0, ownerNames=null, content=业绩预增优质成长股, userTo...</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:23 PM</td>
+										<td>Jul 24, 2018 03:37:08 PM</td>
 										<td class='linked' test-id='14'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=3, ownerIds=0, ownerNames=null, content=连续三年净资产收益高的策略, us...</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
+										<td>Jul 24, 2018 03:37:08 PM</td>
 										<td class='linked' test-id='15'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=4, ownerIds=0, ownerNames=null, content=胜率最高策略, userToken...</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
+										<td>Jul 24, 2018 03:37:09 PM</td>
 										<td class='linked' test-id='16'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=5, ownerIds=0, ownerNames=null, content=上升趋势确定策略, userTok...</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
+										<td>Jul 24, 2018 03:37:09 PM</td>
 										<td class='linked' test-id='17'>智能诊股.addquestionList----首页问题列表--AddQuestion [id=6, ownerIds=0, ownerNames=null, content=足球概念龙头, userToken...</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1537,12 +1504,12 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
+										<td>Jul 24, 2018 03:37:09 PM</td>
 										<td class='linked' test-id='18'>自选股</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
+										<td>Jul 24, 2018 03:37:09 PM</td>
 										<td class='linked' test-id='19'>自选股.getUserStocks----获取用户列表</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1576,7 +1543,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 23, 2018 02:40:24 PM</td>
+										<td>Jul 24, 2018 03:37:09 PM</td>
 										<td class='linked' test-id='19'>自选股.getUserStocks----获取用户列表</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1625,7 +1592,7 @@
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>java.lang.AssertionError</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -1639,46 +1606,8 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Jul 23, 2018 02:40:22 PM</td>
-                                                        <td class='linked' test-id='2'>注册登录.loginFalse----用户名正确，密码错误</td>
-                                                        <td><pre><pre>java.lang.AssertionError: expected [用户名或密码错误次数过多已锁定] but found [用户名或密码错误]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.niuguwang.test.apitestJava.cases.LoginTest.loginFalse(LoginTest.java:101)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jul 23, 2018 02:40:23 PM</td>
-                                                        <td class='linked' test-id='3'>注册登录.loginFalse04----用户名错误，密码正确</td>
+                                                        <td>Jul 24, 2018 03:37:06 PM</td>
+                                                        <td class='linked' test-id='2'>注册登录.loginFalse04----用户名错误，密码正确</td>
                                                         <td><pre><pre>java.lang.AssertionError: expected [用户名或密码错误] but found [参数错误]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
@@ -1750,19 +1679,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 23, 2018 02:40:20 PM</div>
+					<div class='panel-lead'>Jul 24, 2018 03:37:01 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 23, 2018 02:40:23 PM</div>
+			 		<div class='panel-lead'>Jul 24, 2018 03:37:06 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>2,431ms</div>
+					<div class='panel-lead'>5,248ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1778,20 +1707,20 @@
 						</tr>
 						<tr>
 							<td>牛股王app接口</td>
-							<td>16</td>
-							<td>3</td>
+							<td>17</td>
+							<td>2</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td>注册登录</td>
-							<td>5</td>
-							<td>3</td>
+							<td>6</td>
+							<td>2</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td>loginfalse</td>
-							<td>3</td>
-							<td>2</td>
+							<td>4</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 						<tr>
@@ -1843,22 +1772,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 14,
-				failParent: 2,
+				passParent: 15,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 2,
+				exceptionsParent: 1,
 				
-				passChild: 14,
-				failChild: 2,
+				passChild: 15,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 34,
+				exceptionsChild: 33,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

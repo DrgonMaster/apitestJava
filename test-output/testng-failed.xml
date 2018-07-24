@@ -28,7 +28,6 @@
       </class> <!-- com.niuguwang.test.apitestJava.cases.GetQuestionReplybyLittleTest -->
       <class name="com.niuguwang.test.apitestJava.cases.LoginTest">
         <methods>
-          <include name="loginFalse"/>
           <include name="loginFalse04"/>
           <include name="beforeTest"/>
         </methods>

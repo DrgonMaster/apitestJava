@@ -58,6 +58,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.10</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 <!-- 打包的配置 ，添加各种插件
